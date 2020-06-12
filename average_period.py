@@ -46,6 +46,6 @@ class AveragePeriodMeasurer(DigitalMeasurer):
         if AVERAGE_PERIOD in self.requested_measurements:
             if self.first_transition_time is not None and self.last_transition_of_first_type_time is not None:
                 period_count = (self.edges_rising if self.first_transition_type else self.edges_falling) - 1
-                values[AVERAGE_PERIOD] = 1 / (float(period_count) / (self.last_transition_of_first_type_time - self.first_transition_time))
+                values[AVERAGE_PERIOD] = 1 / (float(period_count) / float(self.last_transition_of_first_type_time - self.first_transition_time))
 
         return values
