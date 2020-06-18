@@ -1,6 +1,7 @@
 # Average Period
 
 An extension that adds an Average Period metric to digital measurements.
+![Average Period](files/average_period.png)
 
 ## Instructions
 1. Install this extension by clicking "Install"
